@@ -15,7 +15,7 @@ header {
   flex-direction: column;
 }
 
-li {
+.navbar li {
   list-style: none;
 }
 
@@ -29,6 +29,25 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+section {
+  margin-top: 20px;
+  border-top: 2px dashed gray;
+  padding-left: 4px;
+}
+
+section ul,
+section ol {
+    margin-left: 20px;
+}
+
+section li {
+    margin-top: 4px;
+}
+
+section h2 {
+    margin-bottom: 5px;
 }
 
 .page {
@@ -50,8 +69,19 @@ a:hover {
   margin: 5px 0 0 5px;
 }
 
-.navbar {
+.navbar,
+.content {
+  display: flex;
+  flex-direction: column;
   background-color: whitesmoke;
   border-radius: 0 0 5px 5px;
   padding: 5px 0;
+  margin-bottom: 10px;
+  color: #4b4453;
+}
+
+.finished-dish {
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
 }
